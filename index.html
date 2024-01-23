@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Marie Vial Développement Web</title>
+    <link rel="icon" href="images/logo.jpg">
+    <meta name="description" content="Bienvenue sur le portfolio de Marie Vial, développeuse junior">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:wght@100;400&family=Quicksand:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/dcef3565c8.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 750px)" href="styles/style-750.css" />
+
+
+    <!-- Javascript -->
+    <script defer src="scripts/script.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div id="menuToggle">
+
+            <input type="checkbox" class="expand" />
+
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+
+
+            <ul id="menu">
+
+                <div id="logo-menu-burger">
+                    <div><i class="fa-solid fa-bookmark i-left"></i></div>
+                    <h1>Marie Vial</h1>
+                    <div><i class="fa-solid fa-bookmark i-right"></i></div>
+                </div>
+                <li><a href="#presentation">
+                        Présentation
+                    </a></li>
+
+                <li><a href="#parcours">
+                        Parcours
+                    </a></li>
+
+                <li><a href="#realisations">
+                        Réalisations
+                    </a></li>
+
+                <li><a href="#competences">
+                        Compétences
+                    </a></li>
+
+            </ul>
+        </div>
+
+        <div id="menu-desktop">
+
+            <div id="logo">
+                <!-- <div><i class="fa-solid fa-bookmark i-left"></i></div> -->
+                <div id="titre-logo">
+                    <h1>Marie Vial</h1>
+                    <h2>Portfolio</h2>
+                </div>
+                <!-- <div><i class="fa-solid fa-bookmark i-right"></i></div> -->
+            </div>
+
+            <div id="nav">
+                <ul>
+                    <li><a href="#presentation">
+                            Présentation
+                        </a></li>
+
+                    <li><a href="#parcours">
+                            Parcours
+                        </a></li>
+
+                    <li><a href="#realisations">
+                            Réalisations
+                        </a></li>
+
+                    <li><a href="#competences">
+                            Compétences
+                        </a></li>
+
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <header>
+        <div>
+            <h2>Développeuse
+                <span class="txt-rotate" data-period="2000" data-rotate='[ " front-end.", " web.", " junior."]'></span>
+            </h2>
+        </div>
+    </header>
+
+    <section id="presentation">
+        <div class="container d-flex justify-content-center">
+            <div id="encart-presentation">
+                <h3><i class="fa-solid fa-bookmark i-left"></i>Présentation<i class="fa-solid fa-bookmark i-right"></i>
+                </h3>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div id="presentation-photo">
+                            <!-- <img src="images/photo.jpg" alt="photo développement web"> -->
+                            <div id="photo-marie"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div id="presentation-texte">
+                            <p>Bonjour ! Moi, c'est Marie, et suite à une reconversion récente, je suis devenue
+                                <strong>développeuse</strong>.
+                                Issue des sciences du langage et de l'accompagnement éducatif, j'ai entrepris une
+                                formation
+                                de <strong>développeur web et web mobile</strong> et je suis désormais titulaire de ce
+                                titre équivalent à
+                                un
+                                bac+2. Je souhaite continuer en
+                                formation en <strong>front-end</strong> et je suis à la recheche d'une entreprise en
+                                alternance
+                                pour réaliser
+                                ce diplôme de niveau bac +3/4. <strong>N'hésitez pas à me
+                                    contacter !</strong>
+                            </p>
+
+                            <a class="btn btn-outline-dark" href="mailto:vial.marie16@gmail.com" role="button">Me
+                                contacter</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="parcours">
+        <h3 class="animate-on-scroll"><i class="fa-solid fa-bookmark i-left"></i>Parcours<i
+                class="fa-solid fa-bookmark i-right"></i></h3>
+        <div id="timeline-bloc">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                <ul class="timeline timeline-centered">
+
+                    <!-- <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>Février 2023 - Mars 2023</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h5 class="timeline-title">Réalisation du site du Bagad Orvez</h5>
+                            <p><a href="https://bagadorvez.bzh"><button type="button" class="btn btn-outline-dark">Y
+                                        aller</button></a></p>
+                        </div>
+                    </li> -->
+                    <li class="timeline-item animate-on-scroll">
+                        <div class="timeline-info">
+                            <span>Octobre 2022 - Avril 2023</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h5 class="timeline-title">Formation développeur web et web mobile (DWWM)</h5>
+                            <p>Effectuée à Arinfo (Nantes)</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item animate-on-scroll">
+                        <div class="timeline-info">
+                            <span>2016 - 2022</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h5 class="timeline-title">Missions d'accompagnement éducatif</h5>
+                            <p>Missions d'aide aux devoirs, de soutien scolaire, de coaching pour adolescents; poste
+                                d'Accompagnante d'Elèves en Situation de Handicap</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item animate-on-scroll">
+                        <div class="timeline-info">
+                            <span>2021 - 2022</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h5 class="timeline-title">Relecture de la thèse de Maïeul Rouquette</h5>
+                            <p>En vue d'une publication chez Peeters</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item animate-on-scroll">
+                        <div class="timeline-info">
+                            <span>2016</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h5 class="timeline-title">Master didactique des langues et Français Langue Etrangère</h5>
+                            <p>Université Savoie Mont-Blanc</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item animate-on-scroll">
+                        <div class="timeline-info">
+                            <span>2014</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h5 class="timeline-title">Licence Sciences du Langage</h5>
+                            <p>Université Lyon II</p>
+                        </div>
+                    </li>
+
+
+
+
+                    <!-- <li class="timeline-item period">
+                        <div class="timeline-info"></div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">April 2016</h4>
+                        </div>
+                    </li> -->
+
+
+                </ul>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section id="realisations">
+        <div class="container ">
+            <h3><i class="fa-solid fa-bookmark i-left"></i>Mes réalisations<i class="fa-solid fa-bookmark i-right"></i>
+            </h3>
+            <div id="item-display" class="row">
+
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front-bagad">
+                                <div class="card-front-encart">
+                                    <h6>Site du Bagad Orvez</h6>
+                                    <div class="content-realisation-item-mobile">
+                                        <p>Site du Bagad d'Orvault et de son école de musique. </p>
+                                        <p><a href="https://bagadorvez.bzh" class="btn btn-outline-light"
+                                                type="button">Y
+                                                aller</a>
+                                        </p>
+
+                                        <p>Technos utilisées :</p>
+                                        <p class="techno-realisations-items"><i class="fa-brands fa-html5"></i><i
+                                                class="fa-brands fa-css3-alt"></i><i
+                                                class="fa-brands fa-square-js"></i><i
+                                                class="fa-brands fa-bootstrap"></i><i class="fa-brands fa-php"></i><i
+                                                class="fa-brands fa-symfony"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-back-bagad">
+                                <div class="content-realisation-item">
+                                    <p>Site du Bagad d'Orvault et de son école de musique. </p>
+                                    <p><a href="https://bagadorvez.bzh" class="btn btn-outline-light" type="button">Y
+                                            aller</a>
+                                    </p>
+
+                                    <p>Technos utilisées :</p>
+                                    <p class="techno-realisations-items"><i class="fa-brands fa-html5"></i><i
+                                            class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-square-js"></i><i
+                                            class="fa-brands fa-bootstrap"></i><i class="fa-brands fa-php"></i><i
+                                            class="fa-brands fa-symfony"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-front-portfolio">
+                                <div class="card-front-encart">
+                                    <h6>Portfolio</h6>
+                                    <div class="content-realisation-item-mobile">
+                                        <p>Vous y êtes !</p>
+                                        <p>Technos utilisées :</p>
+                                        <p class="techno-realisations-items"><i class="fa-brands fa-html5"></i><i
+                                                class="fa-brands fa-css3-alt"></i><i
+                                                class="fa-brands fa-square-js"></i><i
+                                                class="fa-brands fa-bootstrap"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-back-portfolio">
+                                <div class="content-realisation-item">
+                                    <p>Vous y êtes !</p>
+                                    <p>Technos utilisées :</p>
+                                    <p class="techno-realisations-items"><i class="fa-brands fa-html5"></i><i
+                                            class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-square-js"></i><i
+                                            class="fa-brands fa-bootstrap"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <p id="paragraphe-realisations">Autres projets effectués en formation : intégration de maquettes,
+                    réalisations de sites vitrines, de
+                    sites fonctionnels en PHP, utilisant JS puis en utilisant Symfony. Vous pouvez aller les trouver sur
+                    mon GitHub : <br />
+                    <a class="btn btn-outline-dark" href="https://github.com/MarieVial2" role="button">Y aller</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="competences">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3><i class="fa-solid fa-bookmark i-left"></i>Technologies<i
+                            class="fa-solid fa-bookmark i-right"></i></h3>
+                    <div id="bloc-technologies">
+
+
+
+                        <div class="techno-item">
+                            <div><i class="fa-brands fa-html5"></i></div>
+                            <div>HTML</div>
+
+                        </div>
+                        <div class="techno-item">
+                            <div><i class="fa-brands fa-css3-alt"></i></div>
+                            <div>CSS</div>
+
+                        </div>
+                        <div class="techno-item">
+                            <div><i class="fa-brands fa-square-js"></i></div>
+                            <div>Javascript</div>
+
+                        </div>
+                        <div class="techno-item">
+                            <div><i class="fa-brands fa-bootstrap"></i></div>
+                            <div>Bootstrap</div>
+
+                        </div>
+                        <div class="techno-item">
+                            <div><i class="fa-brands fa-php"></i></div>
+                            <div>PHP</div>
+
+                        </div>
+                        <div class="techno-item">
+                            <div><i class="fa-brands fa-symfony"></i></div>
+                            <div>Symfony</div>
+
+                        </div>
+                        <div class="techno-item">
+                            <div><i class="fa-brands fa-wordpress"></i></div>
+                            <div>Wordpress</div>
+
+                        </div>
+                        <div class="techno-item">
+                            <div><i class="fa-brands fa-elementor"></i></div>
+                            <div>Elementor</div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div id="bloc-autres">
+                        <h3><i class="fa-solid fa-bookmark i-left"></i>Autres<i
+                                class="fa-solid fa-bookmark i-right"></i></h3>
+                        <ul>
+                            <li>Utilisation de Sass</li>
+                            <li>En cours d'acquisition : React <i class="fa-brands fa-react"></i></li>
+                            <li>SQL</li>
+                            <li>Modélisation UML, Merise</li>
+                            <li>Maquettage</li>
+                            <li>Référencement SEO</li>
+                            <li>Anglais : niveau B2+</li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <div id="bloc-competences">
+                        <h3><i class="fa-solid fa-bookmark i-left"></i>Compétences<i
+                                class="fa-solid fa-bookmark i-right"></i></h3>
+                        <div class="body">
+                            <div class="container-competences center">
+
+
+                                <div>
+                                    <?xml version="1.0" encoding="utf-8"?>
+                                    <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+                                    <svg class="hexagon top" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: #222222;
+                                            }
+                                        </style>
+                                        <polygon class="st0"
+                                            points="74.7,7.2 25.3,7.2 0.5,50 25.3,92.8 74.7,92.8 99.5,50 " />
+                                    </svg><!-- SVG end -->
+                                    <span class="hexagon-icon top">
+                                        <div class="tooltip-container">
+                                            Curiosité
+                                            <span class="tooltip tooltip2">
+                                                Soif d'apprendre et d'aller plus loin.</span>
+                                        </div>
+                                    </span><!-- Icon -->
+
+                                </div><!-- Div 2 end -->
+                                <div>
+                                    <?xml version="1.0" encoding="utf-8"?>
+                                    <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+                                    <svg class="hexagon top-right" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st1 {
+                                                fill: #222222e9;
+                                            }
+                                        </style>
+                                        <polygon class="st1"
+                                            points="74.7,7.2 25.3,7.2 0.5,50 25.3,92.8 74.7,92.8 99.5,50 " />
+                                    </svg><!-- SVG end -->
+                                    <span class="hexagon-icon top-right">
+                                        <div class="tooltip-container">
+                                            Travail en équipe
+                                            <span class="tooltip">J'ai travaillé en équipe à de nombreuses occasions,
+                                                j'ai ainsi
+                                                développé des compétences de communication et d'organisation.</span>
+                                        </div>
+                                    </span><!-- Icon -->
+
+                                </div><!-- Div 3 end -->
+                                <div>
+                                    <?xml version="1.0" encoding="utf-8"?>
+                                    <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+                                    <svg class="hexagon bottom-right" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st2 {
+                                                fill: #222222cc;
+                                            }
+                                        </style>
+                                        <polygon class="st2"
+                                            points="74.7,7.2 25.3,7.2 0.5,50 25.3,92.8 74.7,92.8 99.5,50 " />
+                                    </svg><!-- SVG end -->
+                                    <span class="hexagon-icon bottom-right">
+                                        <div class="tooltip-container">
+                                            Attention <br /> aux détails
+                                            <span class="tooltip tooltip2">Je suis méticuleuse et fais attention aux
+                                                détails subtils.</span>
+                                        </div>
+                                    </span><!-- Icon -->
+
+                                </div><!-- Div 4 end -->
+                                <div>
+                                    <?xml version="1.0" encoding="utf-8"?>
+                                    <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+                                    <svg class="hexagon bottom" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st3 {
+                                                fill: #2222229d;
+                                            }
+                                        </style>
+                                        <polygon class="st3"
+                                            points="74.7,7.2 25.3,7.2 0.5,50 25.3,92.8 74.7,92.8 99.5,50 "
+                                            fill="#222222" />
+                                    </svg><!-- SVG end -->
+                                    <span class="hexagon-icon bottom">
+                                        <div class="tooltip-container">
+                                            Autonomie
+                                            <span class="tooltip tooltip2">Je sais chercher par mes propres
+                                                moyens.</span>
+                                        </div>
+                                    </span><!-- Icon -->
+
+                                </div><!-- Div 5 end -->
+                                <div>
+                                    <?xml version="1.0" encoding="utf-8"?>
+                                    <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+                                    <svg class="hexagon bottom-left" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st4 {
+                                                fill: #22222275;
+                                            }
+                                        </style>
+                                        <polygon class="st4"
+                                            points="74.7,7.2 25.3,7.2 0.5,50 25.3,92.8 74.7,92.8 99.5,50 " />
+                                    </svg><!-- SVG end -->
+                                    <span class="hexagon-icon bottom-left">
+                                        <div class="tooltip-container">
+                                            Esprit d'entraide
+                                            <span class="tooltip">L'autonomie oui, mais pas aux dépens de l'entraide au
+                                                sein d'une
+                                                équipe.</span>
+                                        </div>
+                                    </span><!-- Icon -->
+
+                                </div><!-- Div 6 end -->
+                                <div>
+                                    <?xml version="1.0" encoding="utf-8"?>
+                                    <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+                                    <svg class="hexagon top-left color-1" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st5 {
+                                                fill: #22222252;
+                                            }
+                                        </style>
+                                        <polygon class="st5"
+                                            points="74.7,7.2 25.3,7.2 0.5,50 25.3,92.8 74.7,92.8 99.5,50 " />
+                                    </svg><!-- SVG end -->
+                                    <span class="hexagon-icon top-left">
+
+                                        <div class="tooltip-container">
+                                            Créativité
+                                            <span class="tooltip tooltip2">Attrait pour la création et sensibilité
+                                                esthétique.</span>
+                                        </div>
+                                    </span><!-- Icon -->
+                                    <!-- Link end -->
+                                </div><!-- Div 7 end -->
+                            </div>
+                            <!-- Container end -->
+
+                            <!-- Compétences version mobile -->
+                            <div class="container-competences-mobile">
+                                <div class="square-competence" id="square1">
+                                    <div class="tooltip-container">
+                                        Curiosité
+                                        <span class="tooltip tooltip3">
+                                            Soif d'apprendre et d'aller plus loin.</span>
+                                    </div>
+                                </div>
+
+                                <div class="square-competence" id="square2">
+                                    <div class="tooltip-container">
+                                        Travail en équipe
+                                        <span class="tooltip tooltip4">J'ai travaillé en équipe à de nombreuses
+                                            occasions,
+                                            j'ai ainsi
+                                            développé des compétences de communication et d'organisation.</span>
+                                    </div>
+                                </div>
+
+                                <div class="square-competence" id="square3">
+                                    <div class="tooltip-container">
+                                        Attention <br /> aux détails
+                                        <span class="tooltip tooltip3">Je suis méticuleuse et fais attention aux
+                                            détails subtils.</span>
+                                    </div>
+                                </div>
+
+                                <div class="square-competence" id="square4">
+                                    <div class="tooltip-container">
+                                        Autonomie
+                                        <span class="tooltip tooltip4">Je sais chercher par mes propres
+                                            moyens.</span>
+                                    </div>
+                                </div>
+
+                                <div class="square-competence" id="square5">
+                                    <div class="tooltip-container">
+                                        Esprit <br /> d'entraide
+                                        <span class="tooltip tooltip3">L'autonomie oui, mais pas aux dépens de
+                                            l'entraide au
+                                            sein d'une
+                                            équipe.</span>
+                                    </div>
+                                </div>
+
+                                <div class="square-competence" id="square6">
+                                    <div class="tooltip-container">
+                                        Créativité
+                                        <span class="tooltip tooltip5">Attrait pour la création et sensibilité
+                                            esthétique.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <div id="footer">
+            <h6>Retrouvez-moi sur :</h6>
+            <p> <a href="https://www.linkedin.com/in/marie-vial-d%C3%A9veloppement-web16/"><i
+                        class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/MarieVial2"><i
+                        class="fa-brands fa-square-github"></i></a>
+            </p>
+        </div>
+
+        <div id="copyrights">
+            <p>© Copyright 2023 - Marie VIAL. Tous droits réservés.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

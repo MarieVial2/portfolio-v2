@@ -1,0 +1,343 @@
+/* MENU BURGER */
+
+#menu-desktop {
+    display: none;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 35px;
+    left: 50px;
+    z-index: 3;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: rgb(152, 152, 152);
+}
+
+.expand {
+    width: 70px;
+    height: 70px;
+    /* position: absolute;
+    top: -100px;
+    left: -100px; */
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 6;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+/*
+   * Just a quick hamburger
+   */
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000000;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/*
+   * But let's hide the middle one.
+   */
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+   * Ohyeah and the last one should go the other direction
+   */
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+#menu {
+    position: absolute;
+    width: 350px;
+    margin: -100px 0 0 -100px;
+    padding: 0 100px 50px 100px;
+    padding-top: 125px;
+    background: #ffffff;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/*
+   * And let's slide it in from the left
+   */
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+#logo-menu-burger {
+    border-bottom: solid #000000;
+    width: 200px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#logo-menu-burger i {
+    font-size: 30px;
+    color: rgb(34, 34, 34);
+}
+
+
+
+/* GLOBAL */
+body {
+    font-size: 12px;
+}
+
+.body {
+    height: 100%;
+}
+
+h3 {
+    font-size: 20px;
+    padding: 0;
+    padding-bottom: 20px;
+
+    margin: 0;
+    /* width: 200px; */
+    text-align: center;
+}
+
+.i-left {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.i-right {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#bloc-autres i {
+    font-size: 15px;
+}
+
+#bloc-autres h3 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+.card h6 {
+    font-size: 1.2rem;
+}
+
+/* HEADER */
+
+header h2 {
+    font-size: 1.5rem;
+}
+
+/* PRESENTATION */
+
+#presentation-texte {
+    font-size: 14px;
+}
+
+/* REALISATIONS */
+
+.content-realisation-item-mobile p {
+    font-size: 13px;
+}
+
+
+.card-container {
+    margin-top: 50px;
+    width: 270px;
+    border: none;
+}
+
+.card {
+    width: 270px;
+}
+
+.card-front-encart {
+    height: 300px;
+    width: 250px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content-realisation-item-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+}
+
+.content-realisation-item-mobile i {
+    font-size: 25px;
+    margin: 5px;
+}
+
+.content-realisation-item {
+    height: 400px;
+    flex-direction: column;
+}
+
+/* COMPETENCES */
+
+#bloc-competences {
+    margin-top: 100px;
+    padding-left: 0;
+    border-left: none;
+}
+
+#bloc-competences h3 {
+    padding-bottom: 20px;
+}
+
+#competences {
+    padding: 20px;
+}
+
+.container-competences {
+    display: none;
+}
+
+.container-competences-mobile {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+@media (min-width: 300px) and (max-width: 750px) {
+    .container-competences-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+
+.square-competence {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+}
+
+.tooltip3 {
+    /* Définit une position du tooltip plus à gauche (car léger décalage) */
+    right: -65px;
+}
+
+.tooltip4 {
+    /* Définit une position du tooltip plus à gauche (car léger décalage) */
+    right: -60px;
+}
+
+.tooltip5 {
+    /* Définit une position du tooltip plus à gauche (car léger décalage) */
+    right: -65px;
+}
+
+#square1 {
+    background-color: #000000;
+    color: white;
+}
+
+#square2 {
+    background-color: #212121;
+    color: white;
+}
+
+#square3 {
+    background-color: #3d3d3d;
+    color: white;
+}
+
+#square4 {
+    background-color: #666666;
+    color: white;
+}
+
+#square5 {
+    background-color: #9d9d9d;
+
+}
+
+#square6 {
+    background-color: #cbcbcb;
+
+}
